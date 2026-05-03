@@ -7,13 +7,14 @@ namespace Assets.Scripts.my.terrain
 
     public class TerrainType
     {
-
+        //ENCAPSULATION
         public string name { get; protected set; }
+        //ENCAPSULATION
         public string description { get; protected set; } = string.Empty;
 
-
+        // ENCAPSULATION
         public TerrainEnum type { get; protected set; }
-
+        // INHERITANCE
         public List<Locomotion> isPassable(List<Locomotion> locomotions)
         {
             List<Locomotion> passableLocomotions = new List<Locomotion>();
@@ -31,5 +32,6 @@ namespace Assets.Scripts.my.terrain
         }
 
     }
+    // ABSTRACTION
     public enum TerrainEnum { Land, Water, Air, Elevated }
 }

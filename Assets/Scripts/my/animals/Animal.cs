@@ -7,9 +7,11 @@ namespace Assets.Scripts.my.animals
     using Unity.Mathematics;
 
     public abstract class Animal{
+        // ENCAPSULATION
         public string name { get; protected set; }  
         protected List<Locomotion> locomotionTypes;
         private TerrainType currentTerrain;
+        // ENCAPSULATION
         public TerrainType CurrentTerrain
         {
             get => currentTerrain;
@@ -25,6 +27,7 @@ namespace Assets.Scripts.my.animals
                 throw new System.Exception("Animal cannot move to this terrain");
             }
         }
+        // INHERITANCE
         public Locomotion getLocomotionForTerrain(TerrainType terrain)
         {
             if (locomotionTypes != null)
@@ -38,11 +41,14 @@ namespace Assets.Scripts.my.animals
             }
             return null;
         }
+        // INHERITANCE
         public Locomotion getLocomotionForCurrentTerrain()
         {
             return getLocomotionForTerrain(currentTerrain);
         }
+        // POLYMORPHISM
         public abstract string makeNoise();
+        // INHERITANCE
         public bool CanMoveTo(TerrainType terrain)
         {
             return getLocomotionForTerrain(terrain) != null;

@@ -15,7 +15,7 @@ namespace Assets.Scripts.my.animals
 				locomotionTypes = new List<Locomotion> {LandBased.Create("Crawling"), Aquatic.Create("Swimming")}
 			};
         }
-
+        // POLYMORPHISM
         public override string makeNoise()
         {
             return "The turtle makes a low grunting sound.";

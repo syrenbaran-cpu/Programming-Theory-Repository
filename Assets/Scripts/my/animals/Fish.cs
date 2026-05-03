@@ -15,7 +15,8 @@ namespace Assets.Scripts.my.animals
 				locomotionTypes = new List<Locomotion> {Aquatic.Create("Swimming")}
 			};
 		}
-		public override string makeNoise()
+        // POLYMORPHISM
+        public override string makeNoise()
 		{
 			return "Fish blubs.";
         }

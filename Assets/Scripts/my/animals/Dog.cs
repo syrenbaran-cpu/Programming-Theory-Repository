@@ -19,7 +19,7 @@ namespace Assets.Scripts.my.animals
 				}
 			};
 		}
-
+        // POLYMORPHISM
         public override string makeNoise()
         {
             return "Dog barks.";

@@ -15,7 +15,7 @@ namespace Assets.Scripts.my.animals
 				locomotionTypes = new List<Locomotion> {Aerial.Create("Flying"), LandBased.Create("Walking")}
 			};
         }
-
+        // POLYMORPHISM
         public override string makeNoise()
         {
             return "Dove coo-coos.";

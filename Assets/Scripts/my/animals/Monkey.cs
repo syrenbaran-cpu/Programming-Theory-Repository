@@ -15,7 +15,7 @@ namespace Assets.Scripts.my.animals
 				locomotionTypes = new List<Locomotion> {LandBased.Create("Walking"), Vertical.Create("Climbing")}
 			};
         }
-
+        // POLYMORPHISM
         public override string makeNoise()
         {
             return "The monkey chatters.";

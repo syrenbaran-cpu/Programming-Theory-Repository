@@ -15,8 +15,8 @@ namespace Assets.Scripts.my.animals
 				locomotionTypes = new List<Locomotion> {LandBased.Create("Hopping")}
 			};
 		}
-
-		public override string makeNoise()
+        // POLYMORPHISM
+        public override string makeNoise()
 		{
 			return "Bunny munches on a carrot.";
         }
