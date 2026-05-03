@@ -1,0 +1,10 @@
+namespace Assets.Scripts.my.movement{
+
+    public class Walking : Locomotion
+    {
+        public Walking()
+        {
+            
+        }
+    }
+}

@@ -1,0 +1,7 @@
+namespace Assets.Scripts.my.movement{
+    using Assets.Scripts.my.terrain;
+    public class Locomotion{    
+        private TerrainEnum t;
+        private List<TerrainEnum> availableTerrain;
+    }
+}
